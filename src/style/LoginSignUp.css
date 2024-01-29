@@ -22,7 +22,7 @@
 }
 
 .mosh-loader {
-    width: 100px; /* adjust the size as needed */
+    width: 100px;
     animation: moshAnimation 2s linear infinite;
 }
 
@@ -258,7 +258,6 @@ input[type="submit"]:active {
         height: calc(10vw - 2px);
     }
 
-    /* Additional styles for smaller screens */
     section .signin .content .form .inputBox input {
         padding: 15px 10px 7.5px;
         font-size: 1.2em;
@@ -274,7 +273,23 @@ input[type="submit"]:active {
     }
 }
 
+
 @media (max-width: 600px) {
+    * {
+        font-size: 13px;
+    }
+
+    section .signin .content .form {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    section .signin .content img.mosh-logo {
+        width: 300px;
+    }
+
     section span {
         width: calc(20vw - 2px);
         height: calc(20vw - 2px);
