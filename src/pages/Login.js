@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import '../style/LoginSignUp.css';
 // eslint-disable-next-line no-unused-vars
-import {getDocs, addDoc, collection, where, query} from 'firebase/firestore';
+import {getDocs, collection, where, query} from 'firebase/firestore';
 import {db} from "../firebaseConfig";
 
 // Login component definition
