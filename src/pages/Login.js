@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import '../style/LoginSignUp.css';
+// eslint-disable-next-line no-unused-vars
 import {getDocs, addDoc, collection, where, query} from 'firebase/firestore';
 import {db} from "../firebaseConfig";
 
@@ -103,7 +104,7 @@ function Login(props) {
                                    required/> <i>Password</i>
                         </div>
 
-                        <div className="links"><a href="#">Forgot Password</a> <a href="./signup">Signup</a>
+                        <div className="links"><a href="#" onClick={(e) => e.preventDefault()}>Forgot Password</a> <a href="./signup">Signup</a>
                         </div>
 
                         <div className="inputBox">
