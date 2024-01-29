@@ -104,6 +104,7 @@ function Login(props) {
                                    required/> <i>Password</i>
                         </div>
 
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <div className="links"><a href="#" onClick={(e) => e.preventDefault()}>Forgot Password</a> <a href="./signup">Signup</a>
                         </div>
 
